@@ -13,7 +13,7 @@ response:
 ----------
 
 PUT /queue 
-{'id':{''}}i
+{'id':{''}}
 
 
 
@@ -22,34 +22,23 @@ Interface Web <-> Server
 ========================
 
 GET /exeutors
+
 response:
-```python
+```python 
 {'master': {'executors': 2, 'jobs_active': [], 'offline': False},
- 'slaveek': {'executors': 4,
+ 'slave': {'executors': 4,
              'jobs_active': [{'name': {'color': 'blue_anime',
                                        'name': 'tete',
-                                       'url': 'http://localhost:8080/job/tete/',
-                                       'time':{'remaining':'kek', 'started':'lol'},
+                                       'url': 'http://',
+                                       'time':{'remaining':'1s', 'started':'2s'},
                                        },
                               'number': '23'},
                              {'name': {'color': 'blue_anime',
                                        'name': 'tete',
                                        'url': 'http://localhost:8080/job/tete/',
-                                       'time':{'remaining':'kek', 'started':'lol'},
+                                       'time':{'remaining':'1s', 'started':'2s'},
                                        },
-                              'number': '22'},
-                             {'name': {'color': 'blue_anime',
-                                       'name': 'tete',
-                                       'url': 'http://localhost:8080/job/tete/',
-                                       'time':{'remaining':'kek', 'started':'lol'},
-                                       },
-                              'number': '21'},
-                             {'name': {'color': 'blue_anime',
-                                       'name': 'tete',
-                                       'url': 'http://localhost:8080/job/tete/',
-                                       'time':{'remaining':'kek', 'started':'lol'},
-                                       },
-                              'number': '20'}],
+                              'number': '22'}],
              'offline': False}}
 ````
 
