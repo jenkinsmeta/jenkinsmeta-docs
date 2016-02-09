@@ -23,7 +23,7 @@ Interface Web <-> Server
 
 GET /exeutors
 response:
-```json
+```python
 {'master': {'executors': 2, 'jobs_active': [], 'offline': False},
  'slaveek': {'executors': 4,
              'jobs_active': [{'name': {'color': 'blue_anime',
