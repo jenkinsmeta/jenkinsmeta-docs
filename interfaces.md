@@ -23,6 +23,7 @@ Interface Web <-> Server
 
 GET /exeutors
 response:
+```json
 {'master': {'executors': 2, 'jobs_active': [], 'offline': False},
  'slaveek': {'executors': 4,
              'jobs_active': [{'name': {'color': 'blue_anime',
@@ -50,7 +51,7 @@ response:
                                        },
                               'number': '20'}],
              'offline': False}}
-
+````
 
 GET /queue
 response:
