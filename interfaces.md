@@ -2,18 +2,6 @@ Interfaces
 ==========
 
 
-GET /queue
-
-response:
-{ 'jobname':{'time_': ''}}
-
-
-
-
-----------
-
-PUT /queue 
-{'id':{''}}
 
 
 
@@ -21,7 +9,7 @@ PUT /queue
 Interface Web <-> Server
 ========================
 
-GET /exeutors
+##GET /exeutors
 
 response:
 ```python 
@@ -42,17 +30,27 @@ response:
              'offline': False}}
 ````
 
-GET /queue
+
+##GET /queue
+
 response:
-{...}
+````python
+{ 'jobname':{'time_': ''}}
+```
 
 
-GET /views/
+##GET /views/
+
 response:
+````python
 {'kekeke': {'url':'http://local/views/kekeke'}}
 {'buildbot-kek':{'url':'http://local/views/myview'}
+````
 
 
-GET /views/:name
+##GET /views/:name
+
 response:
+````python
 {'jobs':{'name':{'status':'building '}}}
+````
