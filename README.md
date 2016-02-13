@@ -13,8 +13,10 @@ In backend the app is using Jenkins API to gather needed data from Jenkins maste
 
 
 ## Jenkinsmeta-worker
-As worker needs to be a standalone, configurable service, we need to configure everything related to jenkins master coupled with it, here.
+As worker needs to be a standalone service, we need to pass whole configuration for jenkins master coupled with it, in each call, as it has to be an stateless API.
 
+
+So, server has to pass hostname+port with each call. Theoretically, it also needs to pass call type: if jenkins API will be called or some different CI API.
 
 ## Planned architecture with multiple microservices deployed
 ![detailed arch](https://raw.githubusercontent.com/jenkinsmeta/jenkinsmeta-docs/master/images/architecture.png)
